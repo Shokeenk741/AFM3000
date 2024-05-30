@@ -64,7 +64,7 @@ int crc_check(uint8_t data[], uint8_t nbrOfBytes, uint8_t checksum){
 float flow()
 {
 
-                        ioctl(file, I2C_SLAVE, 0x50);
+                        ioctl(file, I2C_SLAVE, 0x40);
 
                         // Sending Flow Collection command
                         int maxRetries = 4;
